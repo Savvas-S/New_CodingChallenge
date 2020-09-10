@@ -18,7 +18,7 @@ In order to inspect the results, please use the below information to provide acc
 Refactor the given code.
 
 ## Part 2 - Fleet API 
-Your goal is to create a stateful microservice that manages shipping containers, as a RESTful API. 
+Your goal is to create a stateful service that manages shipping containers, as a RESTful API. 
 
 ### Requirements
 1. As a user I want the ability create containers and load them to my fleet of Ships and Trucks
