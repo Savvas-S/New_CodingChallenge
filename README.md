@@ -1,11 +1,20 @@
 # CodingChallenge
 
 ## Setup the environment
+[Duplicate](https://help.github.com/articles/duplicating-a-repository/) this repository to your personal Github account and commit changes there in meaningful, well-described chunks. 
+Please mark your new repository as **private** (duplicating the repo in GitHub instead of forking it will allow you to mark it as a private repository).
 
-Create a new branch from 'master' named with your full name as "FirstLast". Commit your changes there in meaningful, well-described chunks. 
-Please do not commit back to master.
+## Submitting your results
+
+In order to inspect the results, please use the below information to provide access to our reviewers on your private (or public) clone of your excercise:
+
+- Username: hyperioreviewer
+- Email: reviewer@hyperiosoftware.com
+
+---
 
 ## Part 1 - Refactoring
+### Requirements
 Refactor the given code.
 
 ## Part 2 - Fleet API 
@@ -28,3 +37,4 @@ Your goal is to create a stateful microservice that manages shipping containers,
 - Containerize your work wherever possible
 - Take the time to document your API using an industry-standard methodology
 - Testing makes perfect
+
