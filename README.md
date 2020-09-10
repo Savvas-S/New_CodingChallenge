@@ -1,5 +1,10 @@
 # CodingChallenge
 
+## Setup the environment
+
+The best approach is to [duplicate](https://help.github.com/articles/duplicating-a-repository/) this repository to your personal Github account and commit changes there in meaningful, well-described chunks. 
+Please mark your new repository as **private** (duplicating the repo in GitHub instead of forking it will allow you to mark it as a private repository).
+
 ## Part 1 - Refactoring
 Refactor the given code.
 
@@ -23,3 +28,10 @@ Your goal is to create a stateful microservice that manages shipping containers,
 - Containerize your work wherever possible
 - Take the time to document your API using an industry-standard methodology
 - Testing makes perfect
+
+## Submitting your results
+
+In order to allow us to inspect the results, please grant access to our reviewers on your private clone of your exercise using either of the below:
+
+- Username: hyperioreviewer
+- Email: reviewer@hyperiosoftware.com
