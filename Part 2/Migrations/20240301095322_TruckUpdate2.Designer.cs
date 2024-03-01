@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjectDb;
 
@@ -10,9 +11,11 @@ using ProjectDb;
 namespace Test_part2.Migrations
 {
     [DbContext(typeof(ProjectDbContext))]
-    partial class ProjectDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240301095322_TruckUpdate2")]
+    partial class TruckUpdate2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.2");
@@ -28,9 +31,6 @@ namespace Test_part2.Migrations
 
                     b.Property<int?>("Truckid")
                         .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("imported_Date_Time")
-                        .HasColumnType("TEXT");
 
                     b.Property<string>("name")
                         .IsRequired()
@@ -75,6 +75,9 @@ namespace Test_part2.Migrations
                     b.Property<string>("name")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("offLoad")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("id");
 

@@ -10,25 +10,22 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using ProjectDb;
-
+using services;
 namespace CodingChallenge
 {
     public class Startup
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDistributedMemoryCache();
-            services.AddSession(options =>
-            {
-                options.IdleTimeout = TimeSpan.FromMinutes(10);
-                options.Cookie.HttpOnly = true;
-                options.Cookie.IsEssential = true;
-            }); //configuration for creating a session 
             services.AddControllers();
-
             //Configuration for the SQLite databse connection 
             services.AddDbContext<ProjectDbContext>(options =>
                 options.UseSqlite("Data Source=app.db"));
+
+            ///Configuration to use services from services.cs
+            services.AddScoped<TruckServices>()
+            .AddScoped<ContainerServices>()
+            .AddScoped<ShipServices>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,7 +38,6 @@ namespace CodingChallenge
 
             app.UseRouting();
 
-            app.UseSession(); //this goes between the routing midleware and before Endpoints
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers(); //Mapping the controllers to the appbuilder
