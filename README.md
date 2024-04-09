@@ -1,18 +1,5 @@
 # CodingChallenge
-
-## Setup the environment
-[Duplicate](https://help.github.com/articles/duplicating-a-repository/) this repository to your personal Github account and commit changes there in meaningful, well-described chunks. 
-Please mark your new repository as **private** (duplicating the repo in GitHub instead of forking it will allow you to mark it as a private repository).
-
-## Submitting your results
-
-In order to inspect the results, please use the below information to provide access to our reviewers on your private (or public) clone of your excercise:
-
-- Username: hyperioreviewer
-- Email: reviewer@hyperiosoftware.com
-
 ---
-
 ## Part 1 - Refactoring
 ### Requirements
 Refactor the given code.
@@ -28,13 +15,3 @@ Your goal is to create a stateful service that manages shipping containers, as a
 5. As a user I want to specify individual capacities per ship, so that I can handle ships with diferent capacities
 6. As a user I want to also manage trucks, so that I can use the program to manage load of my trucks as well
 7. As a user I want the offloading from trucks to be restricted to the last load, so that it is not possible to unload unreachable goods
-
-### Bonus
-- Present the vehicles in the fleet in a Web-based UI, each with its details and current load of containers
-- The presentation can be as simple or as elegant as you want
-
-## Tips
-- Containerize your work wherever possible
-- Take the time to document your API using an industry-standard methodology
-- Testing makes perfect
-
